@@ -1,0 +1,7 @@
+.body {
+    background-color: #ddd;
+    overflow-x: auto;
+    font-size: 14px;
+    max-width: 1000px;
+    padding: 50px;
+}
