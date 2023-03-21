@@ -1,0 +1,13 @@
+
+.form__button {
+    background-color: teal;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+}
+
+.form__button:active {
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: rgb(0, 0, 0);
+}
