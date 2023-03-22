@@ -13,7 +13,7 @@
     }
 
     const toggleTaskDone = (taskIndex) => {
-        task[taskIndex].done = !tasks[tasksIndex].done;
+        task[taskIndex].done = !tasks[taskIndex].done;
         redner();
     }
 
