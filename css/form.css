@@ -1,3 +1,9 @@
+.form {
+    padding: 10px 5px 10px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .form__button {
     background-color: teal;
@@ -10,4 +16,12 @@
     border-width: 1px; 
     border-style: solid; 
     border-color: rgb(0, 0, 0);
+}
+
+.form__field {
+    border: solid 1px hsl(0, 0%, 80%);
+    margin: 5px;
+    padding: 10px;
+    height: 25px;
+    font-size: small;
 }
