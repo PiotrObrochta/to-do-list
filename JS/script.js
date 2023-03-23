@@ -1,4 +1,15 @@
 {
+    const tasks = [
+        {
+            content: "testowy wpis",
+            done: false,
+        },
+        {
+            content: "napisać dobrze kod",
+            done: true,
+        },
+    ];
+
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
@@ -10,12 +21,12 @@
     const removeTask = (taskIndex) => {
         tasks.splice(taskIndex, 1);
         render();
-    }
+    };
 
     const toggleTaskDone = (taskIndex) => {
-        task[taskIndex].done = !tasks[taskIndex].done;
-        redner();
-    }
+        tasks[taskIndex].done = !tasks[taskIndex].done;
+        render();
+    };
 
     const bindEvents = () => {
         const removeButtons = document.querySelectorAll(".js.remove");
@@ -30,7 +41,7 @@
 
         toggleDoneButtons.forEach((toggleDoneButton, index) => {
             toggleDoneButton.addEventListener("click", () => {
-                toggleDoneButton(index);
+                toggleTaskDone(index);
             });
         });
 
@@ -39,13 +50,13 @@
 
             for (const task of tasks) {
                 htmlString += `
-                <li
-                    ${task.done ? " style=\"text-decoration: line-through\"" : ""}
-                >
-                    <button class="js-done">zrobione?</button>
-                    <button class="js-remove">usuń</button>
-                    ${task.content}
-                </li>
+            <li class="container__list__item">
+          
+                    <button class="js-done button__done">
+                     ${task.done ? "✔" : ""}</button>
+                    <p class="list__item ${task.done ? "container__list__item--done" : ""}">${task.content}</p>
+                    <button class="js-remove button__remove">🗑</button>
+            </li>
             `;
             }
 
@@ -64,6 +75,9 @@
             }
 
             addNewTask(newTaskContent);
+            newTaskContent.value = "";
+            newTaskContent.focus();
+
         };
 
         const init = () => {
