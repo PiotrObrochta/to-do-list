@@ -1,4 +1,4 @@
-.task__content--done {
+.task__done {
     text-decoration: line-through;
 }
 
@@ -18,4 +18,16 @@
     border-width: 1px; 
     border-style: solid; 
     border-color: rgb(0, 0, 0);
+    border-radius: 2px
 }
+
+.task__button--remove {
+    background: #ec283c;
+}
+.task__button--remove:active {
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: rgb(0, 0, 0);
+    border-radius: 2px
+}
+
