@@ -1,0 +1,21 @@
+.task__content--done {
+    text-decoration: line-through;
+}
+
+.task__button {
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
+
+.task__button--done {
+    background: #1a7b1e;
+}
+
+.task__button--done:active {
+    border-width: 1px; 
+    border-style: solid; 
+    border-color: rgb(0, 0, 0);
+}
