@@ -4,7 +4,6 @@
     font-size: 15px;
     display: grid;
     grid-template-columns: 5fr 1fr;
-    grid-template-rows: 2;
     grid-gap: 20px;
 }
 
