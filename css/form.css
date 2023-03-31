@@ -1,9 +1,19 @@
 .form {
     background-color: #ffffff;
-    padding: 2px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding: 15px;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 2;
+    grid-gap: 20px;
+}
+
+@media (max-width:767px) {
+    .form {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto;
+    }
+    
 }
 
 .form__button {
@@ -14,15 +24,14 @@
 }
 
 .form__button:active {
-    border-width: 1px; 
-    border-style: solid; 
+    border-width: 1px;
+    border-style: solid;
     border-color: rgb(0, 0, 0);
 }
 
 .form__field {
     border: solid 1px hsl(0, 0%, 80%);
-    margin: 5px;
     padding: 10px;
     height: 25px;
-    font-size: small;
+    font-size: 15px;
 }
