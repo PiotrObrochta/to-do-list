@@ -1,5 +1,37 @@
+.task {
+        max-width: 100%;
+        padding: 0px;
+        margin: 0px;
+}
+
+.task__list {
+    list-style: none;
+    background: white;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    margin-bottom: 10px
+}
+
+.task__content {
+    background: white;
+    border-bottom: 2px solid #EEEDEF;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .task__done {
     text-decoration: line-through;
+    padding-left: 10px;
+}
+
+.task__added {
+    flex-grow: 1;
+    text-align: left;
+    word-break: break-word;
+    padding-left: 5px;
 }
 
 .task__button {
@@ -7,7 +39,8 @@
     color: white;
     width: 30px;
     height: 30px;
-    padding: 0;
+    margin: 5px;
+    padding: 0px;
 }
 
 .task__button--done {
