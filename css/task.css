@@ -16,7 +16,7 @@
     padding: 10px;
     border-bottom: 2px solid #EEEDEF;
     display: grid;
-    grid-template-columns: 55px 3fr 0fr;;
+    grid-template-columns: 55px 3fr 0fr;
 }
 
 .task__done {
