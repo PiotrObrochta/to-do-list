@@ -1,7 +1,6 @@
 .form {
     background-color: #ffffff;
     padding: 15px;
-    font-size: 15px;
     display: grid;
     grid-template-columns: 5fr 1fr;
     grid-gap: 20px;
