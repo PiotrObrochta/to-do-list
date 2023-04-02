@@ -1,14 +1,5 @@
 {
-    const tasks = [
-        {
-            content: "testowy wpis",
-            done: false,
-        },
-        {
-            content: "napisać dobrze kod",
-            done: true,
-        },
-    ];
+    const tasks = [];
 
     const addNewTask = (newTaskContent) => {
         tasks.push({
@@ -67,6 +58,7 @@
         const onFormSubmit = (event) => {
             event.preventDefault();
 
+            const newTaskInput = document.querySelector(".js-newTask");
             const newTaskContent = document.querySelector(".js-newTask").value.trim();
 
             if (newTaskContent === "") {
@@ -74,8 +66,8 @@
             }
 
             addNewTask(newTaskContent);
-            newTaskContent.value = "";
-            newTaskContent.focus();
+            newTaskInput.value = "";
+            newTaskInput.focus();
 
         };
 
