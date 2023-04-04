@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="JS/script.js"></script>
     <link href="css/body.css" rel="stylesheet">
+    <link href="css/container.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
     <link href="css/section.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -24,24 +25,28 @@
         rel="stylesheet">
 </head>
 
-<body class="body">
-        <section class="section">
+<body class="">
+    <main class="container">
+        <header>
             <h1>Lista zadań</h1>
+        </header>
         </section>
-        <section class="section__header">
-            <h2>Dodaj nowe zadanie</h2>
-        </section>
-        <section class="section__form">
-            <form class="form js-form">
-                <input placeholder="Co jest do zrobienia?" class="form__field js-newTask" autofocus>
-                <button class="form__button">Dodaj zadanie</button>
+        <section class="section">
+            <h2 class="section__header">Dodaj nowe zadanie</h2>
+            <div class="section__body">
+                <form class="form js-form">
+                    <input placeholder="Co jest do zrobienia?" class="form__field js-newTask" autofocus>
+                    <button class="form__button">Dodaj zadanie</button>
+            </div>
             </form>
         </section>
-        <section class="section__list">
-            <h2 class="">Lista zadań</h2>
-        </section>
-            <ul class="task js-tasks">
-            </ul>
+        <section class="section">
+            <h2 class="section__header">Lista zadań</h2>
+            <div class="section__body">
+                <ul class="task js-tasks">
+                </ul>
+            </div>
+    </main>
 </body>
 
 </html>
