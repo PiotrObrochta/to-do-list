@@ -1,22 +1,16 @@
 .task {
-    max-width: 100%;
     padding: 0px;
     margin: 0px;
-    background-color: #ffffff;
-}
-
-.task__list {
     list-style: none;
-    background: white;
-    margin-bottom: 10px
 }
 
 .task__content {
-    background: white;
-    padding: 10px;
-    border-bottom: 2px solid #EEEDEF;
     display: grid;
-    grid-template-columns: 55px 3fr 0fr;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #EEEDEF;
 }
 
 .task__done {
@@ -35,26 +29,30 @@
     color: white;
     width: 30px;
     height: 30px;
-    margin: 10px;
     padding: 0px;
 }
 
-.task__button--done {
+.task__button--toggleDone {
     background: #1a7b1e;
 }
 
-.task__button--done:active {
-    border-width: 1px; 
-    border-style: solid; 
-    border-color: rgb(0, 0, 0);
+.task__button--toggleDone:hover {
+    background: #209224;
+}
+
+.task__button--toggleDone:active {
+    background: #25a529;
 }
 
 .task__button--remove {
     background: #ec283c;
 }
+
+.task__button--remove:hover {
+    background: #f52d41;
+}
+
 .task__button--remove:active {
-    border-width: 1px; 
-    border-style: solid; 
-    border-color: rgb(0, 0, 0);
+    background: #f3394c;
 }
 
