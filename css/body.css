@@ -1,8 +1,7 @@
 .body {
     background-color:#ededed;
-    overflow-x: auto;
     font-size: 15px;
     max-width: 900px;
     margin: 0 auto;
-    padding: 15px;
+    padding: 20px;
 }
