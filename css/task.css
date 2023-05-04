@@ -30,29 +30,30 @@
     width: 30px;
     height: 30px;
     padding: 0px;
+    transition: 0.7s;
 }
 
 .task__button--toggleDone {
-    background: #1a7b1e;
+    background: hsl(122, 65%, 29%);
 }
 
 .task__button--toggleDone:hover {
-    background: #209224;
+    background: hsl(122, 65%, 35%);
 }
 
 .task__button--toggleDone:active {
-    background: #25a529;
+    background: hsl(122, 65%, 40%);
 }
 
 .task__button--remove {
-    background: #ec283c;
+    background: hsl(354, 84%, 54%);
 }
 
 .task__button--remove:hover {
-    background: #f52d41;
+    background: hsl(354, 84%, 60%);
 }
 
 .task__button--remove:active {
-    background: #f3394c;
+    background: hsl(354, 84%, 65%);
 }
 
