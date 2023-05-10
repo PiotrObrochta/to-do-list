@@ -14,3 +14,11 @@
 .section__body {
     padding: 20px;
 }
+
+.section__button:hover {
+	color: hsl(180, 100%, 30%);
+}
+
+.section__button:disabled {
+	color: #b3b3b3;
+}
