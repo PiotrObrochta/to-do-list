@@ -15,10 +15,22 @@
     padding: 20px;
 }
 
+.section__button {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: none;
+    color: hsl(180, 100%, 25%);
+    background-color: transparent;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 .section__button:hover {
-	color: hsl(180, 100%, 30%);
+    color: hsl(180, 100%, 30%);
 }
 
 .section__button:disabled {
-	color: #b3b3b3;
+    color: #b3b3b3;
 }
+

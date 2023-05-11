@@ -17,6 +17,7 @@
     border: none;
     padding: 10px;
     transition: 0.7s;
+    cursor: pointer;
 }
 
 .form__button:hover {

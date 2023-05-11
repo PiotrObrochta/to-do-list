@@ -35,6 +35,7 @@
     height: 30px;
     padding: 0px;
     transition: 0.7s;
+    cursor: pointer;
 }
 
 .task__button--toggleDone {
