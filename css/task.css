@@ -13,6 +13,10 @@
     border-bottom: 1px solid #EEEDEF;
 }
 
+.task__content--hidden {
+    display: none;
+}
+
 .task__done {
     text-decoration: line-through;
 }
