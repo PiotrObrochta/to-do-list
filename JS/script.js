@@ -85,13 +85,22 @@
                 Ukończ wszystkie
             </button>
         `;
-
-            document.querySelector(".js-buttons").innerHTML = buttonHtmlString;
         };
+            document.querySelector(".js-buttons").innerHTML = buttonHtmlString;
     };
 
     const bindButtonsEvents = () => {
+        const button_toggleHideDoneTasks = document.querySelector(".js-toggleHideDoneTasks");
 
+        if (button_toggleHideDoneTasks) {
+            button_toggleHideDoneTasks.addEventListener("click", toggleHideDoneTasks);
+        };
+
+        const button_markAllTasksDone = document.querySelector(".js-markAllTasksDone");
+
+        if (button_markAllTasksDone) {
+            button_markAllTasksDone.addEventListener("click", markAllTasksDone);
+        };
     };
 
     const render = () => {
@@ -102,6 +111,13 @@
         bindToggleDoneEvents();
         bindButtonsEvents();
     };
+
+    const toggleHideDoneTasks = () => {
+        hideDoneTasks = !hideDoneTasks;
+        render();
+    };
+
+    
 
     const onFormSubmit = (event) => {
         event.preventDefault();
