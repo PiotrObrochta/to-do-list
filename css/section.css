@@ -10,10 +10,18 @@
     grid-gap: 20px;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
-    margin: 0;
-    border-bottom: solid 1px #e5e2e2;
-  }
+    padding: 20px;
+    border-bottom: 1 px solid #ddd;
+    margin: 10px 0;
+    background: white;
+    box-shadow: 0 0 5px #ddd;
+}
+
+@media (width: 767px) {
+    .section__header {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 .section__body {
