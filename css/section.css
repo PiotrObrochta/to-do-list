@@ -9,6 +9,8 @@
     padding: 20px;
     margin: 0;
     border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .section__body {
