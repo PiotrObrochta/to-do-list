@@ -5,7 +5,8 @@ https://piotrobrochta.github.io/to-do-list/
 Hello, in this application I would like to show what I am learning in the next module of the course. Here you can create your own task list, mark the task as done or simply delete it from the list
 
 The animation shows the basic functionality of the task list ⬇
-![to_do_list](https://user-images.githubusercontent.com/122232161/229727170-e7d6d903-6ff7-42c8-b18b-01c4716bd256.gif)
+![to_do_list_update_15 05 2023](https://github.com/PiotrObrochta/to-do-list/assets/122232161/ff7b7a8d-8439-4bdf-8267-558fb0e4213c)
+
 
 ### I used technology 
 
