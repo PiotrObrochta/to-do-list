@@ -6,22 +6,22 @@
 
 .section__header {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr auto auto;
     grid-gap: 20px;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-bottom: 1 px solid #ddd;
+    border-bottom: 1px solid #ddd;
     margin: 10px 0;
     background: white;
     box-shadow: 0 0 5px #ddd;
-}
-
-@media (width: 767px) {
+  }
+  
+  @media (max-width: 767px) {
     .section__header {
-        grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
     }
-}
+  }
 
 
 .section__body {
