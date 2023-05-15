@@ -5,23 +5,26 @@
 }
 
 .section__header {
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    grid-gap: 20px;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
     border-bottom: 1px solid #ddd;
     margin: 10px 0;
     background: white;
     box-shadow: 0 0 5px #ddd;
-  }
-  
-  @media (max-width: 767px) {
-    .section__header {
-      grid-template-columns: 1fr;
+}
+
+.section__taskListTitleButtons {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    justify-content: end;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .section__taskListTitleButtons {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
     }
-  }
+}
 
 
 .section__body {
@@ -34,6 +37,16 @@
     background-color: transparent;
     transition: 0.3s;
     cursor: pointer;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+@media (max-width: 767px) {
+    .section__button {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
 }
 
 .section__button:hover {
@@ -43,4 +56,3 @@
 .section__button:disabled {
     color: #b3b3b3;
 }
-
